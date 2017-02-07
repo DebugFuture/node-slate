@@ -563,6 +563,43 @@ html, body {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+// EXPAND-COLLAPSE EXAMPLES
+////////////////////////////////////////////////////////////////////////////////
+.expand-examples {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  fill: rgb(255, 255, 255);
+  height: 24px; width: 24px;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  user-select: none;
+
+  position: fixed;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+  cursor: pointer;
+}
+.examples-collapsed {
+  .page-wrapper {
+    .content {
+      &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
+        margin-right: 30px;
+      }
+      pre, blockquote {
+        display: none;
+      }
+    }
+    .dark-box {
+      width: 30px;
+      .lang-selector {
+        display: none;
+      }
+    }
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN
 ////////////////////////////////////////////////////////////////////////////////
 // These are the styles for phones and tablets
