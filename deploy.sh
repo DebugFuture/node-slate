@@ -17,7 +17,7 @@ Options:
                            commit's message.
 "
 
-npm run build
+bundle exec middleman build --clean
 
 parse_args() {
   # Set args from a local environment file.
